@@ -1,4 +1,5 @@
 import { forwardRef, useImperativeHandle, useRef } from "react"
+import { createPortal } from "react-dom";
 
 const ResultNodel = forwardRef(function ResultModel({ result, targettime, remainingTime, onReset }, ref) {
     const dialog = useRef();
